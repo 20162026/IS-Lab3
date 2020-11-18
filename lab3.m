@@ -8,7 +8,7 @@ d = (1 + 0.6*sin(2*pi*x/0.7)) + 0.3*sin(2*pi*x)/2;
 local_max=x(islocalmax(d));
 local_min=x(islocalmin(d));
 
-%centrai
+%kvailokas metodas rasti centrus..
 tempi = 0;
 for i=1:length(local_max)
     c(i)=local_max(i);
@@ -26,8 +26,6 @@ c1 = local_max(1);
 c2 = local_max(2);
 
 %spinduliu reiksmes rankinis
-%rr=0.17;
-
 r=[0.17 0.15 0.1];
 
 for ii=1:num_elem
